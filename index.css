@@ -5,11 +5,18 @@
     right: 0;
     height: 60px;
     background-color: #0c0c0c;
-
-    color: aliceblue;
+    
     text-align: center;
     user-select: none;
     outline: none;
+    animation: title 5s infinite;
+}
+
+@keyframes title{
+  25%{ color: aliceblue;}
+  50% { color: rgb(251, 245, 153);}
+  75% { color: rgb(157, 231, 143);}
+  100% { color: rgb(238, 121, 189);}
 }
 
 @media screen and (min-width: 700px) {
@@ -120,7 +127,7 @@
   }
   .result{
     position: relative;
-    width: 225px;
+    width: 230px;
     height: 90px;
     margin-top: 5px;
     margin-left: auto;
@@ -133,6 +140,7 @@
 .balance{
   color: #25c510;
   font-weight: bold;
+  text-align: center;
 }
 .Prevalue{
   position: relative;
@@ -140,7 +148,7 @@
   width: 45px;
   margin-left: 5px;
   margin-right: 5px;
-  margin-top: -5px;
+  margin-top: -12px;
   color: #a1a1a1;
 }
 .Presvalue{
@@ -148,7 +156,7 @@
   float: left;
   width: 45px;
   margin-left: -43px;
-  margin-top: 1px;
+  margin-top: -10px;
   color: #ff8bc1;
   
 }
@@ -157,7 +165,7 @@
   float: right;
   width: 45px;
   margin-right: 100px;
-  margin-top: -4px;
+  margin-top: -10px;
   color: #a1a1a1;
 }
 .Presvaluee{
@@ -165,7 +173,7 @@
   float: right;
   width: 45px;
   margin-right: 100px;
-  margin-top: -9px;
+  margin-top: -13px;
   color: #ff8bc1;
 }
 .input{
@@ -174,7 +182,7 @@ width: 65%;
 height: 35px;
 margin-left: 5%;
 margin-right: 5%;
-margin-top: -40px;
+margin-top: 0px;
 float: unset;
 padding: 8px;
 background: #FFFCDD;
