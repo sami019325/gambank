@@ -1,192 +1,228 @@
 .title{
-  position:fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 70px;
-    background-color: #0c0c0c;
-    
-    text-align: center;
-    user-select: none;
-    outline: none;
-    animation: title 5s infinite;
-}
-
-@keyframes title{
-  25%{ color: aliceblue;}
-  50% { color: rgb(251, 245, 153);}
-  75% { color: rgb(157, 231, 143);}
-  100% { color: rgb(238, 121, 189);}
-}
-
-@media screen and (min-width: 700px) {
-  .person{
-    background-color: bisque;
-    width: 400px;
-    float: left;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-
+    position:fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background-color: #0c0c0c;
+      color: #ff004c;
+      text-align: center;
+      user-select: none;
+      outline: none;
+      animation: title 5s infinite;
   }
   
-}
-
-.person{
-  position: relative;
-  width: 320px;
-  height: 210px;
-  border-radius: 10px;
-  background-color: rgb(255, 238, 218);
-  top: 75px;
-  margin-left: auto;
-  margin-right: auto;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-
-
-
-.plus {
-    position: relative;
-    width: 35px;
-    height: 200px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    float: left;
-    margin-top: 5px;
-    margin-left: 5px;
-    background-color: #FFE91F;
-    user-select: none;
-    outline: none;
+  @keyframes title{
+    25%{ color: rgb(36, 117, 189);}
+    50% { color: rgb(251, 245, 153);}
+    75% { color: rgb(157, 231, 143);}
     
   }
-  .profile {
+  
+  @media screen and (min-width: 700px) {
+    .person{
+      background-color: bisque;
+      width: 400px;
+      float: left;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  
+    }
+    
+  }
+  
+  .person{
     position: relative;
+    width: 320px;
+    height: 220px;
+    padding-top: 5px;
     border-radius: 10px;
-    width: 225px;
-    height: 50px;
-    float:unset;
+    background-color: rgb(255, 238, 218);
+    top: 60px;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5px;
-    padding-left: 4px;
-    padding-bottom: auto;
-    padding-top: auto;
-    background-color: #77BEFF;
-    border: 1px solid black;
-    user-select: none;
-    outline: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
-  .img {
-    position: relative;
-    height: 40px;
-    width: 40px;
-    opacity: .9;
-    border-radius: 50%;
-    background-color: #77BEFF;
-    margin-left: 5px;
-    border: none;
-    margin-top: 3px;
-    user-select: none;
-    outline: none;
-  }
+  
+  
+  
+  
+  .plus {
+      position: relative;
+      width: 35px;
+      height: 200px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      float: left;
+      margin-top: 0px;
+      margin-left: 5px;
+      background-color: #FFE91F;
+      user-select: none;
+      outline: none;    
+    }
+    .plus:active{
+      position: relative;
+      width: 35px;
+      height: 200px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      float: left;
+      margin-top: 5px;
+      margin-left: 5px;
+      background-color: #ffe100;
+      color: #FFFCDD;
+      user-select: none;
+      outline: none;
+    }
+    .profile {
+      position: relative;
+      border-radius: 10px;
+      width: 225px;
+      height: 50px;
+      float:unset;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+      padding-left: 4px;
+      padding-bottom: auto;
+      padding-top: auto;
+      background-color: #77BEFF;
+      border: 1px solid black;
+      user-select: none;
+      outline: none;
+    }
+    .img {
+      position: relative;
+      height: 40px;
+      width: 40px;
+      opacity: .9;
+      border-radius: 50%;
+      background-color: #77BEFF;
+      margin-left: 5px;
+      border: none;
+      margin-top: 3px;
+      user-select: none;
+      outline: none;
+    }
+  
+    .name {
+      position: relative;
+      text-align: center;
+      margin-left: 43px;
+      margin-top: -35px;
+      
+      outline: none;
+    }
+    .redo{
+      position: relative;
+      float: right;
+      margin-top: -40px;
+      margin-right:5px ;
+    }
+    .minus {
+      position: relative;
+      width: 35px;
+      height: 200px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      left: 240px;
+      top: -190px;
+      margin-right: 5px;
+      background-color: #2BFF59;
+      user-select: none;
+      outline: none;
+    }
+    .minus:active{
+      position: relative;
+      width: 35px;
+      height: 200px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      left: 240px;
+      top: -190px;
+      margin-right: 5px;
+      background-color: #0a642d;
+      color: azure;
+      user-select: none;
+      outline: none;
+    }
 
-  .name {
-    position: relative;
+    .result{
+      position: relative;
+      width: 230px;
+      height: 90px;
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 5px;
+      border: 1px solid black;
+      background-color: #CDFCFF;
+      user-select:text;
+    }
+  .balance{
+    color: #25c510;
+    font-weight: bold;
     text-align: center;
-    margin-left: 43px;
-    margin-top: -35px;
-    
-    outline: none;
   }
-  .redo{
+  .Prevalue{
+    position: relative;
+    float: left;
+    width: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -12px;
+    color: #a1a1a1;
+  }
+  .Presvalue{
+    position: relative;
+    float: left;
+    width: 45px;
+    margin-left: -41px;
+    margin-top: -10px;
+    color: #ff8bc1;
+    
+  }
+  .Prevaluee{
     position: relative;
     float: right;
-    margin-top: -40px;
-    margin-right:5px ;
+    width: 45px;
+    margin-right: 100px;
+    margin-top: -10px;
+    color: #a1a1a1;
   }
-  .minus {
+  .Presvaluee{
     position: relative;
-    width: 35px;
-    height: 200px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    left: 240px;
-    top: -190px;
-    margin-right: 5px;
-    background-color: #2BFF59;
-    user-select: none;
-    outline: none;
+    float: right;
+    width: 45px;
+    margin-right: 100px;
+    margin-top: -13px;
+    color: #ff8bc1;
   }
-  .result{
-    position: relative;
-    width: 230px;
-    height: 90px;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    border: 1px solid black;
-    background-color: #CDFCFF;
-    user-select:text;
-  }
-.balance{
-  color: #25c510;
-  font-weight: bold;
-  text-align: center;
-}
-.Prevalue{
+  .input{
   position: relative;
-  float: left;
-  width: 45px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: -12px;
-  color: #a1a1a1;
-}
-.Presvalue{
-  position: relative;
-  float: left;
-  width: 45px;
-  margin-left: -43px;
-  margin-top: -10px;
-  color: #ff8bc1;
+  width: 65%;
+  height: 35px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5px;
+  float: unset;
+  padding: 8px;
+  background: #FFFCDD;
+  border: 10% solid #000000;
+  box-sizing: border-box;
+  border-radius: 3px;
+    }
   
-}
-.Prevaluee{
-  position: relative;
-  float: right;
-  width: 45px;
-  margin-right: 100px;
-  margin-top: -10px;
-  color: #a1a1a1;
-}
-.Presvaluee{
-  position: relative;
-  float: right;
-  width: 45px;
-  margin-right: 100px;
-  margin-top: -13px;
-  color: #ff8bc1;
-}
-.input{
-position: relative;
-width: 65%;
-height: 35px;
-margin-left: 5%;
-margin-right: 5%;
-margin-top: 0px;
-float: unset;
-padding: 8px;
-background: #FFFCDD;
-border: 10% solid #000000;
-box-sizing: border-box;
-border-radius: 3px;
-  }
+  
