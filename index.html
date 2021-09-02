@@ -1,165 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="icon" href="mySchoolLogo.png" type="image/x-icon">
+  <link rel="icon" href="mySchoolLogo.png" type="image/x-icon">
+  <title>Static Template</title>
 
-    <title>Static Template</title>
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <script src="calcolate.js"></script> 
-    <!-- <script src="store.js"></script> -->
-  </head>
-  <body>
+    <link rel="stylesheet" href="value.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="value.js"></script>
+</head>
+
+<body>
   
-    <div class="person1">
-      
-       
-      
-    </div>
+<div class="functionArea"> 
+  <button class="btnOfValue" onclick="displyValue()">Set Amount</button>
+  <button>See score</button>
+</div>
 
-<!--person 1 is here ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
-<div class="person">
-  <button type="button" class="plus" onclick="mnsmonika(), summonika(), prevmonika(), clrtextmonika()"> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
+ <!--person 1 is here;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+ <div class="person" >
+  <button type="button" class="plus" onclick=" mnsmonika(), summonika(), prevmonika(), clrtextmonika() "> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
    <div class="profile">
-    <img src="monika.jpg" alt="" srcset="" class="img" >
-    <h2 class="name" contenteditable="true" >Monika</h2>
+    <img  src="monika.jpg" alt="" srcset="" class="img" > </input>
+    <h2 class="name" contenteditable="true" >Kawsar</h2>
     </div>
      <div class="result">
        <p class="balance">Balance</p>
        <img src="redo.png" class="redo" onclick="resetmonika()" alt="redo" srcset=""> </img>
-        <p class="Prevalue">Previous: </p> <p class="Prevaluee" id="prevaluemonika">0</p> <br>
-       <p class="Presvalue">Present: </p> <p class="Presvaluee" id="presvaluemonika">500</p>
+        <p class="Prevalue">Previous: </p> <div  id="prevaluemonikaok"></div> <br>
+       <p class="Presvalue">Present: </p> <div  id="presvaluemonikaok"></div> <br>
      </div>
      <input type="number" id="rstlmonika" class="input">
   <button type="button" class="minus" onclick="mnsmonikapl(), summonikapl(), prevmonikapl(), clrtextmonika2()"> p <br> <br> L <br><br> U<br><br> S </button>
 </div>
 
 
-<!--person 2 is here ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
-<div class="person">
-  <button type="button" class="plus" onclick="mnsmahin(), summahin(), prevmahin(), clrtextmahin()"> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
-   <div class="profile">
-    <img src="mahin.jpg" alt="" srcset="" class="img" >
-    <h2 class="name" contenteditable="true" >Mahin</h2>
-    </div>
-     <div class="result">
-       <p class="balance">Balance</p>
-       <img src="redo.png" class="redo" onclick="resetmahin()" alt="redo" srcset=""> </img>
-        <p class="Prevalue">Previous: </p> <p class="Prevaluee" id="prevaluemahin">0</p> <br>
-       <p class="Presvalue">Present: </p> <p class="Presvaluee" id="presvaluemahin">500</p>
-     </div>
-     <input type="number" id="rstlmahin" class="input">
-  <button type="button" class="minus" onclick="mnsmahinpl(), summahinpl(), prevmahinpl(), clrtextmahin2()"> p <br> <br> L <br><br> U<br><br> S </button>
+    
+       <!--person 2 is here;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+       <div class="person" >
+        <button type="button" class="plus" onclick=" mnsmahin(), summahin(), prevmahin(), clrtextmahin() "> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
+         <div class="profile">
+          <img  src="mahin.jpg" alt="" srcset="" class="img" > </input>
+          <h2 class="name" contenteditable="true" >Mahin</h2>
+          </div>
+           <div class="result">
+             <p class="balance">Balance</p>
+             <img src="redo.png" class="redo" onclick="resetmahin()" alt="redo" srcset=""> </img>
+              <p class="Prevalue">Previous: </p> <div  id="prevaluemahinok"></div> <br>
+             <p class="Presvalue">Present: </p> <div  id="presvaluemahinok"></div> <br>
+           </div>
+           <input type="number" id="rstlmahin" class="input">
+        <button type="button" class="minus" onclick="mnsmahinpl(), summahinpl(), prevmahinpl(), clrtextmahin2()"> p <br> <br> L <br><br> U<br><br> S </button>
+      </div>
+  
+ <!--person 3 is here;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+    <div class="person" >
+        <button type="button" class="plus" onclick=" mnssami(), sumsami(), prevsami(), clrtextsami() "> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
+         <div class="profile">
+          <img  src="sami.jpg" alt="" srcset="" class="img" > </input>
+          <h2 class="name" contenteditable="true" >Kawsar</h2>
+          </div>
+           <div class="result">
+             <p class="balance">Balance</p>
+             <img src="redo.png" class="redo" onclick="resetsami()" alt="redo" srcset=""> </img>
+              <p class="Prevalue">Previous: </p> <div  id="prevaluesamiok"></div> <br>
+             <p class="Presvalue">Present: </p> <div  id="presvaluesamiok"></div> <br>
+           </div>
+           <input type="number" id="rstlsami" class="input">
+        <button type="button" class="minus" onclick="mnssamipl(), sumsamipl(), prevsamipl(), clrtextsami2()"> p <br> <br> L <br><br> U<br><br> S </button>
+      </div>
+
+
+       <!--person 4 is here;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+       <div class="person" >
+        <button type="button" class="plus" onclick=" mnsjoy(), sumjoy(), prevjoy(), clrtextjoy() "> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
+         <div class="profile">
+          <img  src="joy.jpg" alt="" srcset="" class="img" > </input>
+          <h2 class="name" contenteditable="true" >joy</h2>
+          </div>
+           <div class="result">
+             <p class="balance">Balance</p>
+             <img src="redo.png" class="redo" onclick="resetjoy()" alt="redo" srcset=""> </img>
+              <p class="Prevalue">Previous: </p> <div  id="prevaluejoyok"></div> <br>
+             <p class="Presvalue">Present: </p> <div  id="presvaluejoyok"></div> <br>
+           </div>
+           <input type="number" id="rstljoy" class="input">
+        <button type="button" class="minus" onclick="mnsjoypl(), sumjoypl(), prevjoypl(), clrtextjoy2()"> p <br> <br> L <br><br> U<br><br> S </button>
+      </div>
+  
+  
+
+       <!--person 5 is here;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+       <div class="person" >
+        <button type="button" class="plus" onclick=" mnsjayan(), sumjayan(), prevjayan(), clrtextjayan() "> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
+         <div class="profile">
+          <img  src="jayan.jpg" alt="" srcset="" class="img" > </input>
+          <h2 class="name" contenteditable="true" >jayan</h2>
+          </div>
+           <div class="result">
+             <p class="balance">Balance</p>
+             <img src="redo.png" class="redo" onclick="resetjayan()" alt="redo" srcset=""> </img>
+              <p class="Prevalue">Previous: </p> <div  id="prevaluejayanok"></div> <br>
+             <p class="Presvalue">Present: </p> <div  id="presvaluejayanok"></div> <br>
+           </div>
+           <input type="number" id="rstljayan" class="input">
+        <button type="button" class="minus" onclick="mnsjayanpl(), sumjayanpl(), prevjayanpl(), clrtextjayan2()"> p <br> <br> L <br><br> U<br><br> S </button>
+      </div>
+  
+  
+
+             <!--person 6 is here;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+             <div class="person" >
+              <button type="button" class="plus" onclick=" mnsalvee(), sumalvee(), prevalvee(), clrtextalvee() "> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
+               <div class="profile">
+                <img  src="alvee.jpg" alt="" srcset="" class="img" > </input>
+                <h2 class="name" contenteditable="true" >alvee</h2>
+                </div>
+                 <div class="result">
+                   <p class="balance">Balance</p>
+                   <img src="redo.png" class="redo" onclick="resetalvee()" alt="redo" srcset=""> </img>
+                    <p class="Prevalue">Previous: </p> <div  id="prevaluealveeok"></div> <br>
+                   <p class="Presvalue">Present: </p> <div  id="presvaluealveeok"></div> <br>
+                 </div>
+                 <input type="number" id="rstlalvee" class="input">
+              <button type="button" class="minus" onclick="mnsalveepl(), sumalveepl(), prevalveepl(), clrtextalvee2()"> p <br> <br> L <br><br> U<br><br> S </button>
+            </div>
+
+
+
+                   <!--person 7 is here;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+       <div class="person" >
+        <button type="button" class="plus" onclick=" mnsarefin(), sumarefin(), prevarefin(), clrtextarefin() "> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
+         <div class="profile">
+          <img  src="arefin.jpg" alt="" srcset="" class="img" > </input>
+          <h2 class="name" contenteditable="true" >arefin</h2>
+          </div>
+           <div class="result">
+             <p class="balance">Balance</p>
+             <img src="redo.png" class="redo" onclick="resetarefin()" alt="redo" srcset=""> </img>
+              <p class="Prevalue">Previous: </p> <div  id="prevaluearefinok"></div> <br>
+             <p class="Presvalue">Present: </p> <div  id="presvaluearefinok"></div> <br>
+           </div>
+           <input type="number" id="rstlarefin" class="input">
+        <button type="button" class="minus" onclick="mnsarefinpl(), sumarefinpl(), prevarefinpl(), clrtextarefin2()"> p <br> <br> L <br><br> U<br><br> S </button>
+      </div>
+  
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="title">
+  <h1 class="a">Digital Bank Lc</h1>
 </div>
 
 
-    <!--person 3 is here ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
-    <div class="person">
-      <button type="button" class="plus" onclick="mnssami(), sumsami(), prevsami(), clrtextsami()"> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
-       <div class="profile">
-        <img src="sami.jpg" alt="" srcset="" class="img" >
-        <h2 class="name" contenteditable="true" >Kawsar</h2>
-        </div>
-         <div class="result">
-           <p class="balance">Balance</p>
-           <img src="redo.png" class="redo" onclick="resetsami()" alt="redo" srcset=""> </img>
-            <p class="Prevalue">Previous: </p> <p class="Prevaluee" id="prevaluesami">0</p> <br>
-           <p class="Presvalue">Present: </p> <p class="Presvaluee" id="presvaluesami">500</p>
-         </div>
-         <input type="number" id="rstlsami" class="input">
-      <button type="button" class="minus" onclick="mnssamipl(), sumsamipl(), prevsamipl(), clrtextsami2()"> p <br> <br> L <br><br> U<br><br> S </button>
-    </div>
-    <!--person 4 is here;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+
+<div id="takeValueBG" class="takeValueBG"></div>
+<input type="number" name="" id="inputValue" class="inputValue" placeholder="Enter the amout">
+<button class="okOfValue" id="okOfValue" onclick="setValueOfPresent(), setValueOfPresentLocal(), displyNone()">ok</button>
+
+ 
+</body>
+
+
+
+
+
+
+
+
+
+<!-- script -->
+
+
+<script>
+   // var btn = document.createElement("BUTTON");
+   //  btn.innerHTML =  Parseelement;
+    //document.body.appendChild(btn);
+
     
-    <div class="person">
-      <button type="button" class="plus" onclick="mnsjoy(), sumjoy(), prevjoy(), clrtextjoy()"> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
-       <div class="profile">
-        <img src="joy.jpg" alt="" srcset="" class="img" >
-        <h2 class="name" contenteditable="true" >Joy</h2>
-        </div>
-         <div class="result">
-           <p class="balance">Balance</p>
-           <img src="redo.png" class="redo" onclick="resetjoy()" alt="redo" srcset=""> </img>
-            <p class="Prevalue">Previous: </p> <p class="Prevaluee" id="prevaluejoy">0</p> <br>
-           <p class="Presvalue">Present: </p> <p class="Presvaluee" id="presvaluejoy">500</p>
-         </div>
-         <input type="number" id="rstljoy" class="input">
-      <button type="button" class="minus" onclick="mnsjoypl(), sumjoypl(), prevjoypl(), clrtextjoy2()"> p <br> <br> L <br><br> U<br><br> S </button>
-    </div>
 
-    <!--person 5 is here;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+    let divsami = document.createElement('div');
+    divsami.innerHTML = '<p class="Presvaluee" id="presvaluesami" >'+Parseelementsami+'</p>';
+     document.getElementById('presvaluesamiok').appendChild(divsami);
+
     
-    <div class="person">
-      <button type="button" class="plus" onclick="mnsjayan(), sumjayan(), prevjayan(), clrtextjayan()"> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
-       <div class="profile">
-        <img src="jayan.jpg" alt="" srcset="" class="img" >
-        <h2 class="name" contenteditable="true" >Jayan</h2>
-        </div>
-         <div class="result">
-           <p class="balance">Balance</p>
-           <img src="redo.png" class="redo" onclick="resetjayan()" alt="redo" srcset=""> </img>
-            <p class="Prevalue">Previous: </p> <p class="Prevaluee" id="prevaluejayan">0</p> <br>
-           <p class="Presvalue">Present: </p> <p class="Presvaluee" id="presvaluejayan">500</p>
-         </div>
-         <input type="number" id="rstljayan" class="input">
-      <button type="button" class="minus" onclick="mnsjayanpl(), sumjayanpl(), prevjayanpl(), clrtextjayan2()"> p <br> <br> L <br><br> U<br><br> S </button>
-    </div>
+     let divsamip = document.createElement('div');
+     divsamip.innerHTML = '<p class="Prevaluee" id="prevaluesami" >'+Parseelementsamip+'</p>';
+     document.getElementById('prevaluesamiok').appendChild(divsamip);
 
-     <!--person 5 is here;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+// monika monika monika monika monika monika monika monika monika monika monika monika monika monika monika 
+     let divmonika = document.createElement('div');
+    divmonika.innerHTML = '<p class="Presvaluee" id="presvaluemonika" >'+Parseelementmonika+'</p>';
+     document.getElementById('presvaluemonikaok').appendChild(divmonika);
+
     
-     <div class="person">
-      <button type="button" class="plus" onclick="mnsarefin(), sumarefin(), prevarefin(), clrtextarefin()"> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
-       <div class="profile">
-        <img src="arefin.jpg" alt="" srcset="" class="img" >
-        <h2 class="name" contenteditable="true" >Arefin</h2>
-        </div>
-         <div class="result">
-           <p class="balance">Balance</p>
-           <img src="redo.png" class="redo" onclick="resetarefin()" alt="redo" srcset=""> </img>
-            <p class="Prevalue">Previous: </p> <p class="Prevaluee" id="prevaluearefin">0</p> <br>
-           <p class="Presvalue">Present: </p> <p class="Presvaluee" id="presvaluearefin">500</p>
-         </div>
-         <input type="number" id="rstlarefin" class="input">
-      <button type="button" class="minus" onclick="mnsarefinpl(), sumarefinpl(), prevarefinpl(), clrtextarefin2()"> p <br> <br> L <br><br> U<br><br> S </button>
-    </div>
+     let divmonikap = document.createElement('div');
+     divmonikap.innerHTML = '<p class="Prevaluee" id="prevaluemonika" >'+Parseelementmonikap+'</p>';
+     document.getElementById('prevaluemonikaok').appendChild(divmonikap);
 
-     <!--person 5 is here;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+// mahin mahin mahin mahin mahin mahin mahin mahin mahin mahin mahin mahin mahin mahin mahin 
+let divmahin = document.createElement('div');
+    divmahin.innerHTML = '<p class="Presvaluee" id="presvaluemahin" >'+Parseelementmahin+'</p>';
+     document.getElementById('presvaluemahinok').appendChild(divmahin);
+
     
-     <div class="person">
-      <button type="button" class="plus" onclick="mnsalvee(), sumalvee(), prevalvee(), clrtextalvee()"> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
-       <div class="profile">
-        <img src="alvee.jpg" alt="" srcset="" class="img" >
-        <h2 class="name" contenteditable="true" >Alvee</h2>
-        </div>
-         <div class="result">
-           <p class="balance">Balance</p>
-           <img src="redo.png" class="redo" onclick="resetalvee()" alt="redo" srcset=""> </img>
-            <p class="Prevalue">Previous: </p> <p class="Prevaluee" id="prevaluealvee">0</p> <br>
-           <p class="Presvalue">Present: </p> <p class="Presvaluee" id="presvaluealvee">500</p>
-         </div>
-         <input type="number" id="rstlalvee" class="input">
-      <button type="button" class="minus" onclick="mnsalveepl(), sumalveepl(), prevalveepl(), clrtextalvee2()"> p <br> <br> L <br><br> U<br><br> S </button>
-    </div>
+     let divmahinp = document.createElement('div');
+     divmahinp.innerHTML = '<p class="Prevaluee" id="prevaluemahin" >'+Parseelementmahinp+'</p>';
+     document.getElementById('prevaluemahinok').appendChild(divmahinp);
+
+
+// joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy 
+    let divjoy = document.createElement('div');
+    divjoy.innerHTML = '<p class="Presvaluee" id="presvaluejoy" >'+Parseelementjoy+'</p>';
+     document.getElementById('presvaluejoyok').appendChild(divjoy);
+
+    
+     let divjoyp = document.createElement('div');
+     divjoyp.innerHTML = '<p class="Prevaluee" id="prevaluejoy" >'+Parseelementjoyp+'</p>';
+     document.getElementById('prevaluejoyok').appendChild(divjoyp);
+
+// jayan jayan jayan jayan jayan jayan jayan jayan jayan jayan jayan jayan jayan jayan jayan 
+    let divjayan = document.createElement('div');
+    divjayan.innerHTML = '<p class="Presvaluee" id="presvaluejayan" >'+Parseelementjayan+'</p>';
+     document.getElementById('presvaluejayanok').appendChild(divjayan);
+
+    
+     let divjayanp = document.createElement('div');
+     divjayanp.innerHTML = '<p class="Prevaluee" id="prevaluejayan" >'+Parseelementjayanp+'</p>';
+     document.getElementById('prevaluejayanok').appendChild(divjayanp);
+
+
+     // alvee alvee alvee alvee alvee alvee alvee alvee alvee alvee alvee alvee alvee alvee alvee 
+    let divalvee = document.createElement('div');
+    divalvee.innerHTML = '<p class="Presvaluee" id="presvaluealvee" >'+Parseelementalvee+'</p>';
+     document.getElementById('presvaluealveeok').appendChild(divalvee);
+
+    
+     let divalveep = document.createElement('div');
+     divalveep.innerHTML = '<p class="Prevaluee" id="prevaluealvee" >'+Parseelementalveep+'</p>';
+     document.getElementById('prevaluealveeok').appendChild(divalveep);
+
+
+     // arefin arefin arefin arefin arefin arefin arefin arefin arefin arefin arefin arefin arefin arefin arefin 
+    let divarefin = document.createElement('div');
+    divarefin.innerHTML = '<p class="Presvaluee" id="presvaluearefin" >'+Parseelementarefin+'</p>';
+     document.getElementById('presvaluearefinok').appendChild(divarefin);
+
+    
+     let divarefinp = document.createElement('div');
+     divarefinp.innerHTML = '<p class="Prevaluee" id="prevaluearefin" >'+Parseelementarefinp+'</p>';
+     document.getElementById('prevaluearefinok').appendChild(divarefinp);
 
 
 
-
-
-
-
-
-
-
-
-
-    <div class="title">
-      <h1 class="a">Digital Bank Lc</h1>
-    </div>
-  
-
-
-  </body>
-</html>
+</script>
+</html> 
