@@ -4,6 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link rel="manifest" href="./manifest.json">
+  <script src="app.js"></script>
+
 
   <link rel="icon" href="mySchoolLogo.png" type="image/x-icon">
   <title>GamBank</title>
@@ -18,7 +25,7 @@
   
 <div class="functionArea"> 
   <button class="btnOfValue" onclick="displyValue()">Set Amount</button>
-  <button>See score</button>
+  <button class="seeScr" onclick="seeScr(), setresult()">See score</button>
 </div>
 
  <!--person 1 is here;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
@@ -80,7 +87,7 @@
         <button type="button" class="plus" onclick=" mnsjoy(), sumjoy(), prevjoy(), clrtextjoy() "> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
          <div class="profile">
           <img  src="joy.jpg" alt="" srcset="" class="img" > </input>
-          <h2 class="name" contenteditable="true" >Joy</h2>
+          <h2 class="name" contenteditable="true" >joy</h2>
           </div>
            <div class="result">
              <p class="balance">Balance</p>
@@ -99,7 +106,7 @@
         <button type="button" class="plus" onclick=" mnsjayan(), sumjayan(), prevjayan(), clrtextjayan() "> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
          <div class="profile">
           <img  src="jayan.jpg" alt="" srcset="" class="img" > </input>
-          <h2 class="name" contenteditable="true" >Jayan</h2>
+          <h2 class="name" contenteditable="true" >jayan</h2>
           </div>
            <div class="result">
              <p class="balance">Balance</p>
@@ -118,7 +125,7 @@
               <button type="button" class="plus" onclick=" mnsalvee(), sumalvee(), prevalvee(), clrtextalvee() "> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
                <div class="profile">
                 <img  src="alvee.jpg" alt="" srcset="" class="img" > </input>
-                <h2 class="name" contenteditable="true" >Alvee</h2>
+                <h2 class="name" contenteditable="true" >alvee</h2>
                 </div>
                  <div class="result">
                    <p class="balance">Balance</p>
@@ -137,7 +144,7 @@
         <button type="button" class="plus" onclick=" mnsarefin(), sumarefin(), prevarefin(), clrtextarefin() "> M <br><br> I <br><br> N<br><br> U <br><br> S </button>
          <div class="profile">
           <img  src="arefin.jpg" alt="" srcset="" class="img" > </input>
-          <h2 class="name" contenteditable="true" >Arefin</h2>
+          <h2 class="name" contenteditable="true" >arefin</h2>
           </div>
            <div class="result">
              <p class="balance">Balance</p>
@@ -172,13 +179,42 @@
   <h1 class="a">Digital Bank Lc</h1>
 </div>
 
-
+<!-- the part of the set amount ////////////////////////////// -->
 
 <div id="takeValueBG" class="takeValueBG"></div>
 <input type="number" name="" id="inputValue" class="inputValue" placeholder="Enter the amout">
 <button class="okOfValue" id="okOfValue" onclick="setValueOfPresent(), setValueOfPresentLocal(), displyNone()">ok</button>
+<button class="cross" id="crossOfValue" onclick="crossOfValue()"> <img src="cross.png" alt="" srcset=""> </button>
 
- 
+
+<!-- the part of the set amount ////////////////////////////// -->
+<div class="pointSection" id="scoreSection">
+<div class="BGofScr">
+
+  
+  <div class="Scrmonika" id="ScoreOfmonika">MO</div>
+  <div class="Scrmahin" id="ScoreOfmahin">MA</div>
+  <div class="Scrjoy" id="ScoreOfjoy">JO</div>
+  <div class="Scrjayan" id="ScoreOfjayan">JA</div>
+  <div class="Scralvee" id="ScoreOfalvee">AL</div>
+  <div class="Scrarefin" id="ScoreOfarefin">AR</div> 
+
+  <div class="Scrsami" id="ScoreOfsami">SA </div>
+  
+  <div class="frstScr">1st scorer</div>
+  <div class="secondScr ">2nd scorer</div>
+  <div class="thirdScr ">3rd scorer</div>
+  <div class="forthScr ">4th scorer</div>
+  <div class="fifthScr ">5th scorer</div>
+  <div class="sixthScr ">6th scorer</div>
+  <div class="seventhScr">7th scorer</div>
+  <button class="score" id="scoreOfValue" onclick="scoreOfValue()"> 
+    <img src="cross.png" alt="" srcset=""> 
+  </button>
+
+</div>
+</div>
+
 </body>
 
 
