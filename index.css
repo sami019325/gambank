@@ -243,4 +243,14 @@
   border-radius: 3px;
     }
   
+
+.seeScr{
+  position: relative;
+  background-color: #25c510;
+  height: 30px;
+  width: 100px;
+  border-radius: 20px;
+  margin: 5px;
+  float: right;
+}
   
