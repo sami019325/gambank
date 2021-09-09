@@ -634,3 +634,48 @@ function sumarefin(){
   
      window.location.reload(true);
 }
+
+
+
+
+
+
+
+
+// change the background of text area
+
+function changesami(){
+  document.getElementById("samiBody").style.backgroundColor = "magenta";
+  document.getElementById("rstlsami").style.backgroundColor = "red";
+  document.getElementById("rstlsami").style.color = "white";
+}
+function changemonika(){
+  document.getElementById("monikaBody").style.backgroundColor = "magenta";
+  document.getElementById("rstlmonika").style.backgroundColor = "red";
+  document.getElementById("rstlmonika").style.color = "white";
+}
+function changemahin(){
+  document.getElementById("mahinBody").style.backgroundColor = "magenta";
+  document.getElementById("rstlmahin").style.backgroundColor = "red";
+  document.getElementById("rstlmahin").style.color = "white";
+}
+function changejoy(){
+  document.getElementById("joyBody").style.backgroundColor = "magenta";
+  document.getElementById("rstljoy").style.backgroundColor = "red";
+  document.getElementById("rstljoy").style.color = "white";
+}
+function changejayan(){
+  document.getElementById("jayanBody").style.backgroundColor = "magenta";
+  document.getElementById("rstljayan").style.backgroundColor = "red";
+  document.getElementById("rstljayan").style.color = "white";
+}
+function changealvee(){
+  document.getElementById("alveeBody").style.backgroundColor = "magenta";
+  document.getElementById("rstlalvee").style.backgroundColor = "red";
+  document.getElementById("rstlalvee").style.color = "white";
+}
+function changearefin(){
+  document.getElementById("arefinBody").style.backgroundColor = "magenta";
+  document.getElementById("rstlarefin").style.backgroundColor = "red";
+  document.getElementById("rstlarefin").style.color = "white";
+}
